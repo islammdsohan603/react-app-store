@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Star, ArrowLeft } from 'lucide-react';
+import { toast } from 'react-toastify';
 
 const AppDetails = () => {
   const { id } = useParams();
@@ -23,6 +24,18 @@ const AppDetails = () => {
       </div>
     );
   }
+
+  const handleInstall = app => {
+    const existing = JSON.parse(localStorage.getItem('installedApps')) || [];
+    const alreadyInstalled = existing.find(item => item.id === app.id);
+    if (alreadyInstalled) {
+      toast.error('This app is already installed!');
+      return;
+    }
+    const updated = [...existing, app];
+    localStorage.setItem('installedApps', JSON.stringify(updated));
+    toast.success('App installed successfully!');
+  };
 
   return (
     <section className="bg-gray-50 min-h-screen py-10">
@@ -69,7 +82,10 @@ const AppDetails = () => {
 
             {/* Buttons */}
             <div className="mt-6 flex flex-wrap gap-3">
-              <button className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg text-sm font-medium transition shadow">
+              <button
+                onClick={() => handleInstall(app)}
+                className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg text-sm font-medium transition shadow"
+              >
                 Install
               </button>
 
