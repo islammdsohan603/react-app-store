@@ -2,7 +2,7 @@ import React from 'react';
 
 const Stats = () => {
   return (
-    <section className="bg-gradient-to-r from-blue-500 to-purple-600 text-white py-16">
+    <section className="bg-linear-to-r from-blue-500 to-purple-600 text-white py-16">
       <div className="max-w-6xl mx-auto px-4 text-center">
         {/* Heading */}
         <h1 className="text-3xl md:text-4xl font-bold mb-10">
