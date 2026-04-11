@@ -1,5 +1,6 @@
 import { Star } from 'lucide-react';
 import React, { useEffect } from 'react';
+import { GridLoader } from 'react-spinners';
 
 const TrendingApps = () => {
   const [apps, setApps] = React.useState([]);
@@ -63,7 +64,7 @@ const TrendingApps = () => {
           ))}
           {loading && (
             <div className="col-span-full text-center text-gray-500 text-lg font-semibold my-4">
-              Loading apps...
+              <GridLoader />
             </div>
           )}
         </div>
