@@ -86,7 +86,7 @@ const TrendingApps = () => {
             ))}
 
             <div className="mx-auto">
-              <Link to={`/apps`} className="btn btn-error ">
+              <Link to={`/app`} className="btn btn-error ">
                 Show All Apps
               </Link>
             </div>

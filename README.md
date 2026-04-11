@@ -1,18 +1,100 @@
-# React + Vite
+# 🚀 Modern App Store (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive App Store web application where users can explore, view
+details, and install apps. Built with React, this project demonstrates
+real-world frontend development concepts including routing, state management,
+and local storage.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🔗 Live Demo
 
-## React Compiler
+👉 https://react-app-store-projects.netlify.app/
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+---
 
-Note: This will impact Vite dev & build performances.
+## ✨ Features
 
-## Expanding the ESLint configuration
+- 🔍 Browse all available apps
+- 📈 Trending apps section
+- 📄 Dynamic app details page
+- ⬇️ Install apps (saved in localStorage)
+- 🚫 Prevent duplicate installations
+- ⭐ Ratings and download count display
+- 🔥 Toast notifications for user feedback
+- 📱 Fully responsive design
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+- React.js
+- React Router DOM
+- Tailwind CSS
+- React Toastify
+- Lucide React Icons
+- LocalStorage API
+
+---
+
+## 📂 Project Structure
+
+```
+src/
+ ├── components/
+ ├── layout/
+ ├── page/
+ │   ├── homepage/
+ │   ├── apps/
+ │   ├── installApps/
+ │   └── notFoundpage/
+ ├── assets/
+ └── main.jsx
+```
+
+---
+
+## ⚙️ Installation
+
+Clone the project and run locally:
+
+```bash
+git clone https://github.com/your-username/sohan-apps.git
+cd sohan-apps
+npm install
+npm run dev
+```
+
+---
+
+## Home Page
+
+![alt text](<Screenshot 2026-04-11 173746.png>)
+
+## Apps
+
+![alt text](<Screenshot 2026-04-11 173800.png>)
+
+## Install
+
+![alt text](<Screenshot 2026-04-11 173833.png>)
+
+## 🚀 Future Improvements
+
+- 🔎 Search & filter apps
+- 🌙 Dark mode support
+- 🎞️ Animation with Framer Motion
+- 🔗 Share functionality
+- ⚡ API integration (instead of static JSON)
+
+---
+
+## 🙋‍♂️ Author
+
+**Sohan** Frontend Developer (React)
+
+---
+
+## ⭐ Support
+
+If you like this project, give it a ⭐ on GitHub!
