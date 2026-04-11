@@ -8,15 +8,20 @@ import Homepage from './page/homepage/Homepage.jsx';
 import AppPage from './page/apps/App.jsx';
 import Install from './page/installApps/Install.jsx';
 import NotFoundPage from './page/notFoundpage/NotFoundPage.jsx';
+import AppDetails from './page/apps/detailsApp/AppDetails.jsx';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <RootLayout />,
     children: [
-      { index: true, element: <Homepage /> },
-      { path: '/apps', element: <AppPage /> },
+      {
+        index: true,
+        element: <Homepage />,
+      },
+      { path: '/app', element: <AppPage /> },
       { path: '/installedApps', element: <Install /> },
+      { path: '/apps/:id', element: <AppDetails /> },
     ],
   },
 
