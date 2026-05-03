@@ -9,7 +9,7 @@ and local storage.
 
 ## 🔗 Live Demo
 
-👉 https://react-app-store-projects.netlify.app/
+👉 https://react-app-store-one.vercel.app/
 
 ---
 
